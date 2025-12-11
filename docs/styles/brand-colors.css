@@ -1,0 +1,47 @@
+/* ======================
+   Light Mode (default)
+   ====================== */
+:root > *[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #003e78;              /* Header bar */
+  --md-primary-fg-color--light: #125a9c;
+  --md-primary-fg-color--dark: #002f5b;
+
+  --md-accent-fg-color: #ffcb0a;               /* Highlight + active colors */
+  --md-accent-fg-color--light: #ffdd59;
+  --md-accent-fg-color--dark: #d4a300;
+
+  --md-header-fg-color: #ffcb0a;               /* Icons */
+}
+
+/* Force title (site name) and main topic area */
+.md-header__title,
+.md-header__title .md-header__topic {
+  color: #ffcb0a !important;
+}
+
+/* Active tab on top navigation */
+.md-tabs__item--active {
+  color: #ffcb0a !important;
+}
+
+/* ======================
+   Dark Mode (slate)
+   ====================== */
+:root > *[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #00274c;
+  --md-primary-fg-color--light: #345b7f;
+  --md-primary-fg-color--dark:  #00152a;
+
+  --md-accent-fg-color: #ffcb0a;
+  --md-accent-fg-color--light: #ffdd59;
+  --md-accent-fg-color--dark: #d4a300;
+
+  --md-header-fg-color: #ffcb0a;
+}
+
+/* Dark mode title + active tabs */
+[data-md-color-scheme="slate"] .md-header__title,
+[data-md-color-scheme="slate"] .md-header__title .md-header__topic,
+[data-md-color-scheme="slate"] .md-tabs__item--active {
+  color: #ffcb0a !important;
+}
