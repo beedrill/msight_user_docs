@@ -86,6 +86,9 @@ This node:
 
 > Useful for sensor testing, calibration validation, and field deployment checks.
 
+You should see a 3D visualization window pop up showing the live point cloud data from the Velodyne LiDAR as shown below:
+![Velodyne Pointcloud Viewer](../assets/images/pointcloud_viewer.png){ width="100%" }
+
 ---
 
 ## 💾 Step 3 — Save Point Clouds Locally

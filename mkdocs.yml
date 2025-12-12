@@ -31,7 +31,8 @@ theme:
 
 extra_css:
   - styles/brand-colors.css
-
+extra:
+  generator: false
 copyright: "© University of Michigan — Mcity & Michigan Mobility Transformation Lab"
 
 nav:

@@ -45,3 +45,58 @@
 [data-md-color-scheme="slate"] .md-tabs__item--active {
   color: #ffcb0a !important;
 }
+
+/* ===========================================
+   Right-hand TOC active highlight (Light Mode)
+   =========================================== */
+:root > *[data-md-color-scheme="default"] {
+  --md-toc-item-active-color: #003e78; /* or use your accent: #ffcb0a */
+}
+
+/* Make the active item bold for better visibility */
+:root > *[data-md-color-scheme="default"] .md-sidebar--secondary .md-nav__link--active {
+  color: var(--md-toc-item-active-color) !important;
+  font-weight: 600;
+}
+
+/* ===========================================
+   Right-hand TOC active highlight (Dark Mode)
+   =========================================== */
+:root > *[data-md-color-scheme="slate"] {
+  --md-toc-item-active-color: #ffcb0a; /* maize works best on dark backgrounds */
+}
+
+/* Apply dark-mode styling */
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active {
+  color: var(--md-toc-item-active-color) !important;
+  font-weight: 600;
+}
+
+/* ===========================================
+   Light Mode (optional override)
+   =========================================== */
+:root > *[data-md-color-scheme="default"] {
+  /* You can keep default blue or switch to maize */
+  --md-typeset-a-color: #003e78;   /* link color in docs */
+  --md-typeset-a-hover-color: #125a9c;
+}
+
+
+/* ===========================================
+   Dark Mode: fix unreadable blue links
+   =========================================== */
+:root > *[data-md-color-scheme="slate"] {
+  /* Use maize (U-M) or any bright, dark-mode friendly color */
+  --md-typeset-a-color: #ffcb0a;         /* link color */
+  --md-typeset-a-hover-color: #ffdd59;   /* hover color */
+}
+
+/* Make sure visited links do not become dark purple */
+[data-md-color-scheme="slate"] .md-typeset a:visited {
+  color: var(--md-typeset-a-color) !important;
+}
+
+/* Hide "Made with Material for MkDocs" but keep copyright */
+.md-footer-meta__inner .md-footer-meta__item--right {
+  display: none !important;
+}
