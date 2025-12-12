@@ -1,4 +1,4 @@
-# 📡 Multi‑Sensor Data Collection (Mcity)
+# 📡 Multi‑Sensor Data Collection (Setup Field Experiment)
 
 This tutorial shows how to run a multi‑sensor data collection experiment using MSight. We use two Velodyne LiDARs and two RTSP image sensors as an example. Follow the steps to launch receivers, visualize live data, and save pointclouds and images for offline processing.
 
