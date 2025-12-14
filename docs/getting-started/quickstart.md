@@ -133,6 +133,32 @@ You’ve just built a simple data pipeline — one node publishes, the other sub
 
 ---
 
+### 🖼️ Check Current Status
+
+You can check the status of your nodes at any time using:
+
+```bash
+msight_status
+```
+
+You should see something like this:
+```
+--------------------------NODES--------------------------
++--------------+-----------------+-------------------+----------------------+---------------------+----------+
+| Node Name    | Publish Topic   | Subscribe Topic   | Type                 | Last Heartbeat      | Status   |
++==============+=================+===================+======================+=====================+==========+
+| image_viewer |                 | local             | ImageViewerSinkNode  | 2025-12-13 21:36:03 | RUNNING  |
++--------------+-----------------+-------------------+----------------------+---------------------+----------+
+| test_local   | local           |                   | LocalImageSourceNode | 2025-12-13 21:36:03 | RUNNING  |
++--------------+-----------------+-------------------+----------------------+---------------------+----------+
+--------------------------TOPICS--------------------------
++--------------+----------------------------------+---------------+
+| Topic Name   | Data Type                        | Description   |
++==============+==================================+===============+
+| local        | msight_core.data.image.ImageData |               |
++--------------+----------------------------------+---------------+
+```
+Which shows both nodes are running and communicating! 🎉
 ## 💡 What You Learned
 
 You now understand:
