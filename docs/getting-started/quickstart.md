@@ -1,13 +1,13 @@
 # Quick Start Tutorial
 
 This quick tutorial walks you through running your first **MSight** nodes on a single machine.  
-It works on **Windows**, **Linux**, or **macOS**.
+It works on **Windows**, **Linux**, or **macOS**. You can see the [tutorial folder with all resource in it](https://github.com/michigan-traffic-lab/MSight_tutorials/tree/main/two_nodes).
 
 ---
 
 ## 🧰 Step 1. Install MSight Locally
 
-Follow the [Local Installation](../installation/local.md) guide to install MSight on your machine.  
+Follow the [Pip Installation](../installation/pip.md) guide to install MSight on your machine.  
 
 ---
 

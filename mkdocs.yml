@@ -40,7 +40,8 @@ nav:
   - Getting Started: getting-started/quickstart.md
   - Installation:
     - Installation Overview: installation/index.md
-    - Local Installation: installation/local.md
+    - Pip Installation: installation/pip.md
+    - Source Installation: installation/source.md
     - Docker Installation: installation/docker.md
   - System Architecture: 
     - Architecture Overview: architecture/index.md
