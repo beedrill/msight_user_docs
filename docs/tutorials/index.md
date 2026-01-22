@@ -2,8 +2,8 @@
 We offer a rich set of tutorial to manage many practical tasks for various of tasks in roadside digital infrastructure:
 
 ## Basic Usage
-- [RTSP Streaming Tutorial](rtsp-streaming.md): A simple tutorial showing how to retrieve data using MSight from image sensors
-- [UDP Server Tutorial](udp-server.md): A simple tutorial on setting up a UDP server node to receive bytes from UDP socket
+- [RTSP Streaming Tutorial](tutorials/RTSPClient/README.md): A simple tutorial showing how to retrieve data using MSight from image sensors
+- [UDP Server Tutorial](tutorials/UDPServer/README.md): A simple tutorial on setting up a UDP server node to receive bytes from UDP socket
 - [Websocket Client Tutorial](websocket-client.md): A simple websocket tutorial to receive messages from a websocket server into MSight system.
 - [Retrieving Velodyne Pointcloud](velodyne-pointcloud.md): A simple example on obtaining real time pointcloud from velodyne lidar.
 - [Aggregating Images to Videos](aggregating-images.md): A simple example of aggregating image data in the MSight system into video data.
@@ -21,7 +21,7 @@ We offer a rich set of tutorial to manage many practical tasks for various of ta
 - [Multi-Sensor Data Collection](multi-sensor-data-collection.md): A tutorial on collecting real-time data from multiple sensors in a field experiment for further analysis.
 
 ## Cloud
-- [HTTP Uploader](http-uploader.md): A tutorial on receiving images from RTSP server, subsample and upload to an HTTP server. This is a simplest sensor data streaming model that can be used to deploy digital infrastructure that stream roadside sensors to the cloud.
+- [HTTP Uploader](tutorials/HTTPUpload/README.md): A tutorial on receiving images from RTSP server, subsample and upload to an HTTP server. This is a simplest sensor data streaming model that can be used to deploy digital infrastructure that stream roadside sensors to the cloud.
 - [Streaming Data with AWS Kinesis Stream](kinesis-stream.md): A tutorial on real-time streaming data with AWS Kinesis. 
 - [Upload Aggregated Data to AWS S3](upload-s3.md): A tutorial on uploading data to the AWS S3 (storage service).
 

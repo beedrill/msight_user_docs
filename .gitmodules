@@ -1,0 +1,3 @@
+[submodule "docs/tutorials/tutorials"]
+	path = docs/tutorials/tutorials
+	url = https://github.com/michigan-traffic-lab/MSight_tutorials.git
