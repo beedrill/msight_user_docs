@@ -175,4 +175,4 @@ This is the foundation for building complex MSight pipelines.
 Try these extended tutorials next:
 
 - [Receiving Data from RTSP Source and Push to Cloud](../tutorials/data-streaming-pipeline.md)  
-- [Full Object Detection Pipeline with Roadside Camera](xxx.md)
+<!-- - [Full Object Detection Pipeline with Roadside Camera](xxx.md) -->
