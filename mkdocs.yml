@@ -48,7 +48,7 @@ nav:
     - Nodes: architecture/nodes.md
     - Data Types: architecture/data.md
     - Pub/Sub: architecture/pubsub.md
-    - Security: architecture/security.md
+    - Security: security/index.md
   - Algorithms:
     - Algorithm Overview: algorithms/index.md
     - 2D Detection: algorithms/det2d.md
@@ -60,9 +60,9 @@ nav:
     - Overview: cloud-integration/index.md
     - Minimum Setup Example with AWS Kinesis, Firehose and S3: cloud-integration/min-setup-kinesis.md
   - Security: security/index.md
-  - Deployment: deployment/
-  - Tutorials: tutorials/
-  - Developer Guide: developer-guide/
+  - Deployment: deployment/index.md
+  - Tutorials: tutorials/index.md
+  - Developer Guide: developer-guide/index.md
 
 markdown_extensions:
   - attr_list

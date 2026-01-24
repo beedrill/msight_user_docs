@@ -215,7 +215,7 @@ Here is a decision summary:
 
 # 📘 Continue to Setup Guides
 
-* **[AWS Kinesis + Firehose + S3](aws-kinesis-firehose-s3.md)**
+* **[AWS Kinesis + Firehose + S3](min-setup-kinesis.md)**
 * *HTTP Endpoint*
 * *Direct S3 Upload*
 * *Kafka / MSK Integration*
