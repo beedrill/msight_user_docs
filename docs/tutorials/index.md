@@ -10,22 +10,22 @@ We offer a rich set of tutorial to manage many practical tasks for various of ta
 <!-- - [Receive Traffic Signal TSCBM](tscbm.md): Introduction on the TSCBM node that receives traffic signal information. -->
 
 ## Advanced Usage
-- [Bring Your Own Node](): A simple example on how to write your own node.
-- [Bring Your Own Node: Server](): An example on how to create your own server.
-- [Bring Your Own Node: Custom Data](): This tutorial focuses on creating custom data type.
-- [Encoding Detection Results and Forward with RSU](../404.md): This tutorial teaches the user how to setup MSight nodes to encode detection results and encode them into SAE3224 SDSM messages, and forward with V2X communications via RSU.
+- [Bring Your Own Node](../coming-soon.md): A simple example on how to write your own node.
+- [Bring Your Own Node: Server](../coming-soon.md): An example on how to create your own server.
+- [Bring Your Own Node: Custom Data](../coming-soon.md): This tutorial focuses on creating custom data type.
+- [Encoding Detection Results and Forward with RSU](../coming-soon.md): This tutorial teaches the user how to setup MSight nodes to encode detection results and encode them into SAE3224 SDSM messages, and forward with V2X communications via RSU.
 
 ## Roadside Perception
-- [Camera Roadside Object Detection Pipeline](../404.md): A full roadside object detection pipeline with cameras, including image retrieving, object detection, localization, sensor fusioin, tracking and estimation.
-- [Lidar Roadside Object Detection Pipeline](../404.md): A full roadside object detection pipeline with lidars, including pointcloud retrieval, merge, and object detection.
+- [Camera Roadside Object Detection Pipeline](../coming-soon.md): A full roadside object detection pipeline with cameras, including image retrieving, object detection, localization, sensor fusioin, tracking and estimation.
+- [Lidar Roadside Object Detection Pipeline](../coming-soon.md): A full roadside object detection pipeline with lidars, including pointcloud retrieval, merge, and object detection.
 - [Multi-Sensor Data Collection](multi-sensor-data-collection.md): A tutorial on collecting real-time data from multiple sensors in a field experiment for further analysis.
 
 ## Cloud
 - [HTTP Uploader](tutorials/HTTPUpload/README.md): A tutorial on receiving images from RTSP server, subsample and upload to an HTTP server. This is a simplest sensor data streaming model that can be used to deploy digital infrastructure that stream roadside sensors to the cloud.
-- [Streaming Data with AWS Kinesis Stream](../404.md): A tutorial on real-time streaming data with AWS Kinesis. 
-- [Upload Aggregated Data to AWS S3](../404.md): A tutorial on uploading data to the AWS S3 (storage service).
+- [Streaming Data with AWS Kinesis Stream](tutorials/streaming_data_with_kinesis/README.md): A tutorial on setting up full real-time streaming data to cloud storage with AWS Kinesis, Firehose and S3.
+- [Upload Aggregated Data to AWS S3](../coming-soon.md): A tutorial on uploading data to the AWS S3 (storage service).
 
 ## Deployment
-- [Roadside Deployment with Docker](../404.md): Deploy with Docker.
-- [Roadside Deployment with Supervisor](../404.md): Deploy with Supervisor.
+- [Roadside Deployment with Docker](../coming-soon.md): Deploy with Docker.
+- [Roadside Deployment with Supervisor](../coming-soon.md): Deploy with Supervisor.
  
