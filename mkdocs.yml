@@ -64,6 +64,9 @@ nav:
   - Tutorials: tutorials/index.md
   - Developer Guide: developer-guide/index.md
 
+# plugins:
+#   - mkdocs-jupyter
+
 markdown_extensions:
   - attr_list
   - md_in_html
