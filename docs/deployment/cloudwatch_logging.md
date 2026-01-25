@@ -1,5 +1,5 @@
 # Enable AWS Cloudwatch for Logging
-Enabling this feature will allow the user view the log from the cloud.
+You can enable AWS Cloudwatch for logging when deployed with Docker. Enabling this feature will allow the user view the log from the cloud.
 
 To do this:
 1. setup IAM user and grant the user with Cloud wathc access. Refer to [this article](https://docs.docker.com/config/containers/logging/awslogs/)
