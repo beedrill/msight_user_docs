@@ -59,6 +59,7 @@ nav:
   - Cloud Integration: 
     - Overview: cloud-integration/index.md
     - Minimum Setup Example with AWS Kinesis, Firehose and S3: cloud-integration/min-setup-kinesis.md
+    - Advanced Setup with AWS SNS: cloud-integration/sns-integration.md
   - Security: security/index.md
   - Deployment: deployment/index.md
   - Tutorials: tutorials/index.md
