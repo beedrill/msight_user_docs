@@ -23,7 +23,7 @@ We offer a rich set of tutorial to manage many practical tasks for various of ta
 ## Cloud
 - [HTTP Uploader](tutorials/HTTPUpload/README.md): A tutorial on receiving images from RTSP server, subsample and upload to an HTTP server. This is a simplest sensor data streaming model that can be used to deploy digital infrastructure that stream roadside sensors to the cloud.
 - [Streaming Data with AWS Kinesis Stream](tutorials/streaming_data_with_kinesis/README.md): A tutorial on setting up full real-time streaming data to cloud storage with AWS Kinesis, Firehose and S3.
-- [Upload Aggregated Data to AWS S3](../coming-soon.md): A tutorial on uploading data to the AWS S3 (storage service).
+- [Upload Aggregated Data to AWS S3](tutorials/s3_video_uploader/README.md): A tutorial on uploading data to the AWS S3 (storage service).
 
 ## Deployment
 - [Roadside Deployment with Docker](../coming-soon.md): Deploy with Docker.
