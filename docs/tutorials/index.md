@@ -1,6 +1,6 @@
 # Tutorial
-We offer a rich set of tutorial to manage many practical tasks for various of tasks in roadside digital infrastructure:
-
+We offer a rich set of tutorial to manage many practical tasks for various of tasks in roadside digital infrastructure. For all the tutorials, we offer step-by-step instructions, including prerequisite setup, configuration, and execution. The code examples are open-sourced in our [tutorials repository](https://github.com/michigan-traffic-lab/MSight_tutorials).
+                                                              
 ## Basic Usage
 - [RTSP Streaming Tutorial](tutorials/RTSPClient/README.md): A simple tutorial showing how to retrieve data using MSight from image sensors
 - [UDP Server Tutorial](tutorials/UDPServer/README.md): A simple tutorial on setting up a UDP server node to receive bytes from UDP socket
@@ -16,7 +16,7 @@ We offer a rich set of tutorial to manage many practical tasks for various of ta
 - [Encoding Detection Results and Forward with RSU](../coming-soon.md): This tutorial teaches the user how to setup MSight nodes to encode detection results and encode them into SAE3224 SDSM messages, and forward with V2X communications via RSU.
 
 ## Roadside Perception
-- [Camera Roadside Object Detection Pipeline](../coming-soon.md): A full roadside object detection pipeline with cameras, including image retrieving, object detection, localization, sensor fusioin, tracking and estimation.
+- [Camera Roadside Object Detection Pipeline](./tutorials/2d_perception_pipeline/README.md): A full roadside object detection pipeline with cameras, including image retrieving, object detection, localization, sensor fusion, tracking and estimation.
 - [Lidar Roadside Object Detection Pipeline](../coming-soon.md): A full roadside object detection pipeline with lidars, including pointcloud retrieval, merge, and object detection.
 - [Multi-Sensor Data Collection](multi-sensor-data-collection.md): A tutorial on collecting real-time data from multiple sensors in a field experiment for further analysis.
 
