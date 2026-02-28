@@ -25,6 +25,9 @@ We offer a rich set of tutorial to manage many practical tasks for various of ta
 - [Streaming Data with AWS Kinesis Stream](tutorials/streaming_data_with_kinesis/README.md): A tutorial on setting up full real-time streaming data to cloud storage with AWS Kinesis, Firehose and S3.
 - [Upload Aggregated Data to AWS S3](tutorials/s3_video_uploader/README.md): A tutorial on uploading data to the AWS S3 (storage service).
 
+## Security
+- [Setup MSight with Recommended Security Practice](tutorials/security_setup/README.md)
+
 ## Deployment
 - [Roadside Deployment with Docker](../coming-soon.md): Deploy with Docker.
 - [Roadside Deployment with Supervisor](../coming-soon.md): Deploy with Supervisor.
