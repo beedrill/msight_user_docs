@@ -63,7 +63,7 @@ nav:
   - Security: security/index.md
   - Deployment: deployment/index.md
   - Tutorials: tutorials/index.md
-  - Developer Guide: developer-guide/index.md
+  - API Docs: api/index.md
 
 # plugins:
 #   - mkdocs-jupyter
