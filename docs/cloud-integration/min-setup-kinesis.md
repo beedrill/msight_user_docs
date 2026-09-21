@@ -5,6 +5,11 @@ This section walks you through the **minimal cloud setup** needed to enable MSig
 
 Once completed, your MSight deployment will be ready to **receive, store, and organize** real-time data from edge devices.
 
+!!! tip "We recommend MSight Cloud for cloud integration"
+    **[MSight Cloud](msight-cloud.md)** is the recommended way to connect MSight to the cloud. It deploys this ingestion path *and* everything usually built on top of it -- real-time WebSocket delivery to vehicles, SAE J2735 decoding, S3 archiving, client APIs and a management console -- with a single command into your own AWS account.
+
+    Follow **this** guide instead if you genuinely only need the **minimum** cloud functionality: raw real-time ingestion into S3, with your own consumers on top. Everything here also remains useful background for understanding how MSight streams data to AWS.
+
 ---
 
 # 🗂️ 1. Set Up Data Accommodation

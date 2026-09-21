@@ -8,6 +8,11 @@ This tutorial describes a practical pattern for delivering **near–real-time** 
 
 This design is especially useful when you want multiple services (e.g., storage, online analytics, alerting, visualization) to receive the same stream data **in parallel** without coupling their consumption rates.
 
+!!! tip "We recommend MSight Cloud for cloud integration"
+    **[MSight Cloud](msight-cloud.md)** already implements SNS-based fan-out as its core ingestion design -- an SNS FIFO sensor topic fanning out to a per-sensor SQS FIFO queue and a dedicated consumer, with routing handled by subscription filters on the `sensor_name` message attribute. If you are building a fan-out pipeline from scratch, deploy MSight Cloud instead and get it, plus real-time client delivery and operations tooling, without writing any of it.
+
+    Follow **this** tutorial if you only need minimum cloud functionality and are extending your own [Kinesis pipeline](min-setup-kinesis.md) with pub/sub fan-out.
+
 > Important terminology note:
 >
 > * **Kinesis “Enhanced fan-out”** is a Kinesis-native feature that gives each registered consumer dedicated per-shard throughput (up to 2 MiB/sec/shard per consumer) and reduces consumer contention. ([docs.aws.amazon.com](https://docs.aws.amazon.com/streams/latest/dev/building-enhanced-consumers-api.html?utm_source=chatgpt.com))

@@ -215,6 +215,31 @@ Uploads each `SensorDataSequence` it receives to an AWS S3 bucket as a JSON file
 
 ---
 
+### `AWSSNSPusherSinkNode`
+
+Publishes each message it receives to an **AWS SNS topic** as JSON, with message attributes attached so that SNS subscription filter policies can route messages selectively. Publishing happens in a background thread so it never blocks the processing loop.
+
+This is the node that feeds the real-time path of [MSight Cloud](../cloud-integration/msight-cloud.md), whose sensor topic routes on the `sensor_name` attribute.
+
+| Parameter | Description |
+|---|---|
+| `topic_arn` | ARN of the destination SNS topic |
+| `use_dualstack_endpoint` | Use the SNS dual-stack endpoint for IPv4/IPv6 access (default: `True`) |
+
+Message attributes attached to every publish:
+
+| Attribute | Type | Source |
+|---|---|---|
+| `sensor_name` | String | The message's `sensor_name` |
+| `device_name` | String | The `MSIGHT_EDGE_DEVICE_NAME` environment variable |
+| `capture_timestamp` | Number | Epoch capture time, when present |
+| `creation_timestamp` | Number | Epoch message creation time, when present |
+
+!!! warning "Publishing to a FIFO topic"
+    AWS requires a `MessageGroupId` on every publish to an SNS **FIFO** topic (one whose name ends in `.fifo`), including the MSight Cloud sensor topic. See [MSight Cloud → The real-time path](../cloud-integration/msight-cloud.md#the-real-time-path) for how to supply one.
+
+---
+
 ### `AWSVideoPusherSinkNode`
 
 Uploads encoded video to S3 alongside a companion metadata JSON file. For each `VideoData` message it receives, it writes two objects: a `.mp4` file with the raw video bytes and a `_metadata.json` with all other fields (timestamps, frame IDs, sensor name) so the video can be precisely located in time without decoding the file.

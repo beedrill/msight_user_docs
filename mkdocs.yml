@@ -58,6 +58,7 @@ nav:
     - Near-miss Detection: algorithms/near-miss.md
   - Cloud Integration: 
     - Overview: cloud-integration/index.md
+    - MSight Cloud (Recommended): cloud-integration/msight-cloud.md
     - Minimum Setup Example with AWS Kinesis, Firehose and S3: cloud-integration/min-setup-kinesis.md
     - Advanced Setup with AWS SNS: cloud-integration/sns-integration.md
   - Security: security/index.md

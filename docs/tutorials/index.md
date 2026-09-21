@@ -21,6 +21,15 @@ We offer a rich set of tutorial to manage many practical tasks for various of ta
 - [Multi-Sensor Data Collection](multi-sensor-data-collection.md): A tutorial on collecting real-time data from multiple sensors in a field experiment for further analysis.
 
 ## Cloud
+
+!!! tip "These are minimum, build-it-yourself examples"
+    The cloud tutorials below are **minimum examples** for users who want to handle the data themselves and build their cloud from the bottom up. They each set up one piece of the pipeline — an HTTP upload endpoint, a Kinesis stream, an S3 uploader — and leave everything above it to you.
+
+    If you instead want a cloud that already provides in-depth integration with roadside and mobile devices, use **[MSight Cloud](../cloud-integration/msight-cloud.md)**. It deploys the whole edge-to-cloud path into your own AWS account with a single command: sensor ingestion, real-time WebSocket delivery to vehicles and mobile clients, SAE J2735 decoding, S3 archiving, location-aware client APIs and a management console.
+
+    See the [Cloud Integration overview](../cloud-integration/index.md) for how the options compare.
+
+- [Deploy MSight Cloud](../cloud-integration/msight-cloud.md): The recommended path — deploy the full MSight cloud platform, register your sensors, and point MSight Edge at it.
 - [HTTP Uploader](tutorials/HTTPUpload/README.md): A tutorial on receiving images from RTSP server, subsample and upload to an HTTP server. This is a simplest sensor data streaming model that can be used to deploy digital infrastructure that stream roadside sensors to the cloud.
 - [Streaming Data with AWS Kinesis Stream](tutorials/streaming_data_with_kinesis/README.md): A tutorial on setting up full real-time streaming data to cloud storage with AWS Kinesis, Firehose and S3.
 - [Upload Aggregated Data to AWS S3](tutorials/s3_video_uploader/README.md): A tutorial on uploading data to the AWS S3 (storage service).
