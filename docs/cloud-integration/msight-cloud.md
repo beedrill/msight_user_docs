@@ -292,6 +292,9 @@ The roadside device needs credentials that can publish to the sensor topic and, 
 
 Client applications — in-vehicle apps, roadside displays, integrators — talk to the **public client API**, which is unauthenticated and CORS-open.
 
+!!! tip "Building a mobile or in-vehicle app? Do not write this by hand"
+    The **[MSight App Client Library](../mobile/index.md)** implements everything below — WebSocket connection and reconnection, location reporting, SDSM and SPaT parsing, and derived signal state — as a Kotlin Multiplatform library for Android, IVI head units and desktop. Use it instead of calling these routes directly.
+
 ### Register the app
 
 Add an app on the console's **Apps** page. Its flags decide what the app's clients receive:
@@ -405,6 +408,7 @@ npx cdk synth MsightCloudStack                  # render the CloudFormation temp
 ## 🧭 Where to Go Next
 
 * **[MSight Cloud on GitHub](https://github.com/michigan-traffic-lab/msight-cloud)** — source, issues, and the full README.
+* **[MSight App Client Library](../mobile/index.md)** — the client SDK for mobile and in-vehicle devices.
 * **[Node reference](../architecture/nodes.md)** — the edge-side sink nodes that feed the cloud.
 * **[Deployment guide](../deployment/index.md)** — running MSight Core on the roadside device.
 * **[Kinesis + Firehose + S3](min-setup-kinesis.md)** — the minimal alternative, if all you need is raw ingestion and storage.

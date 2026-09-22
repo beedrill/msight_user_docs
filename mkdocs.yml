@@ -48,7 +48,8 @@ nav:
     - Nodes: architecture/nodes.md
     - Data Types: architecture/data.md
     - Pub/Sub: architecture/pubsub.md
-    - Security: security/index.md
+    - Mobile Client: mobile/index.md
+  - Security: security/index.md
   - Algorithms:
     - Algorithm Overview: algorithms/index.md
     - 2D Detection: algorithms/det2d.md

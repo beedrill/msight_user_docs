@@ -55,6 +55,7 @@ Explore the documentation using the left navigation panel or top tabs:
 - [Deployments](deployment/index.md)
 - [Tutorials](tutorials/index.md)
 - [Cloud Integration](cloud-integration/index.md)
+- [Mobile Client Library](mobile/index.md)
 - [Developer Guide](developer-guide/index.md)
 - [API Reference](api/index.md)  
 
