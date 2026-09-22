@@ -100,3 +100,92 @@
 .md-footer-meta__inner .md-footer-meta__item--right {
   display: none !important;
 }
+
+/* ===========================================
+   Top navigation: slide the overflowing tabs
+   Material caps .md-grid at 61rem and already makes
+   .md-tabs__list a horizontal scroller with its
+   scrollbar hidden -- so with this many top-level
+   sections the last tabs were simply invisible,
+   with nothing on screen saying they were there.
+   These styles pair with scripts/tab-scroll.js,
+   which injects the two chevrons and moves the
+   list. Arrows appear only when there is something
+   to reach in that direction.
+   =========================================== */
+.md-tabs > .md-grid {
+  position: relative;
+}
+
+.md-tabs__arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  padding: 0;
+  border: 0;
+  appearance: none;
+  cursor: pointer;
+  /* Inherited from .md-tabs, so the chevrons always match the tab labels
+     -- this palette sets primary: custom, so --md-primary-bg-color cannot
+     be relied on directly. */
+  color: inherit;
+  /* Hidden by default: the script adds data-visible only on the side
+     that actually has more tabs, so a fitting tab row shows nothing. */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.md-tabs__arrow[data-visible] {
+  opacity: 0.75;
+  pointer-events: auto;
+}
+
+.md-tabs__arrow[data-visible]:hover {
+  /* Maize, matching how the active tab is highlighted above. */
+  color: var(--md-accent-fg-color);
+  opacity: 1;
+}
+
+/* Fade the tab row out beneath each chevron, so the strip reads as
+   continuing rather than as ending in a hard edge. */
+.md-tabs__arrow--prev {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--md-primary-fg-color) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.md-tabs__arrow--next {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--md-primary-fg-color) 55%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.md-tabs__arrow svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: currentColor;
+  transition: transform 0.2s;
+}
+
+.md-tabs__arrow[data-visible]:hover svg {
+  transform: scale(1.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-tabs__arrow,
+  .md-tabs__arrow svg {
+    transition: none;
+  }
+}
